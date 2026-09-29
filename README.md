@@ -34,7 +34,7 @@ dotfiles/
 克隆并运行安装脚本：
 
 ```bash
-git clone https://github.com/<你的用户名>/dotfiles.git ~/dotfiles
+git clone https://github.com/shuyiyan123/dotfiles.git ~/dotfiles
 cd ~/dotfiles
 ./install.sh
 ```
