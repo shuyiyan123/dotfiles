@@ -1,0 +1,48 @@
+/* Make Ghostty's dark top bar text and icons visible.
+   The terminal theme is Kanagawa Wave: bg #1f1f28, fg #dcd7ba. */
+
+headerbar,
+headerbar label,
+headerbar button,
+headerbar image,
+headerbar windowcontrols button {
+  color: #dcd7ba;
+}
+
+tabbar,
+tabbar tabbox,
+tabbar tabbox tab,
+tabbar tabbox tab label {
+  color: #dcd7ba;
+}
+
+tabbar tabbox {
+  background-color: #1f1f28;
+}
+
+tabbar tabbox tab:selected {
+  background-color: #2a2a37;
+  color: #ffffff;
+}
+
+/* Keep dropdown text dark and readable on the light GTK theme,
+   and remove the frame around the popover itself. */
+popover > contents,
+popover > arrow {
+  background-color: #fbf1c7;
+  color: #3c3836;
+  border: none;
+  box-shadow: none;
+}
+
+popover.menu modelbutton,
+popover.menu label {
+  color: #3c3836;
+}
+
+popover.menu modelbutton:hover,
+popover.menu modelbutton:focus,
+popover.menu modelbutton:active {
+  background-color: alpha(currentColor, 0.08);
+  color: #1d2021;
+}

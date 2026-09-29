@@ -1,0 +1,6 @@
+# 本地敏感信息不提交
+config
+.DS_Store
+__pycache__/
+*.pyc
+*.log
