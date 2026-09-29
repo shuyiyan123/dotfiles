@@ -44,6 +44,7 @@ for item in "${items[@]}"; do
             ;;
         fastfetch)
             link "fastfetch/config.jsonc" ".config/fastfetch/config.jsonc"
+            link "fastfetch/logo.png" ".config/fastfetch/logo.png"
             ;;
         ghostty)
             link "ghostty/config.ghostty" ".config/ghostty/config.ghostty"

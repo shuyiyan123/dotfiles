@@ -16,7 +16,8 @@ dotfiles/
 ├── zsh/
 │   └── .zshrc
 ├── fastfetch/
-│   └── config.jsonc
+│   ├── config.jsonc
+│   └── logo.png
 ├── ghostty/
 │   ├── config.ghostty
 │   └── gtk.css
@@ -78,7 +79,7 @@ sudo pacman -S ttf-agave-nerd
 
 - `.zshrc` 中的 `DEFAULT_USER` 请改成你的用户名；
 - 如果不用本地代理，删除 `.zshrc` 末尾的代理导出块；
-- `fastfetch/config.jsonc` 里的自定义 logo 图片路径改成你自己的，或删除该行使用内置 logo。
+- `fastfetch/logo.png` 是 fastfetch 的自定义 logo 图片，会随 `install.sh` 一起链接到 `~/.config/fastfetch/`。要换图，替换仓库里的 `fastfetch/logo.png` 即可。
 
 ## 卸载 / 取消链接
 
@@ -87,4 +88,3 @@ sudo pacman -S ttf-agave-nerd
 ```bash
 rm ~/.zshrc ~/.config/fastfetch/config.jsonc
 ```
-
